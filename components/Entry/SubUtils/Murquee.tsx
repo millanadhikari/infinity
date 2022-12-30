@@ -73,7 +73,7 @@ const Murquee = () => {
     <Flex flexDirection="column" gap={{base:8, md:14}} my={{base:4, md:6}}>
       <Marquee>
         {data.map((item) => (
-          <Box id={item.id} textAlign="center" mr={{base:14, sm:20, md:24}}>
+          <Box id={item.title} textAlign="center" mr={{base:14, sm:20, md:24}}>
             {/* <Text fontSize="12"> {item.title}</Text> */}
             <Image w={"60px"} h={"55px"} src={item.img} />
           </Box>
@@ -81,7 +81,7 @@ const Murquee = () => {
       </Marquee>
       <Marquee direction="right">
         {lama.map((item) => (
-          <Box id={item.id} textAlign="center" mr={{base:14, sm:20, md:24}}>
+          <Box id={item.title} textAlign="center" mr={{base:14, sm:20, md:24}}>
             {/* <Text fontSize="12"> {item.title}</Text> */}
             <Image w={"60px"} h={"55px"} src={item.img} />
           </Box>

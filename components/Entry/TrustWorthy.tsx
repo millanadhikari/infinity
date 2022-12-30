@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Slider, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import Murquee from "./SubUtils/Murquee";
 

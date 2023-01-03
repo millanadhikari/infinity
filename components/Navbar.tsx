@@ -1,5 +1,5 @@
 "use client";
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { CgMathEqual } from "react-icons/cg";
 import { GrFormClose } from "react-icons/gr";
@@ -25,7 +25,7 @@ const Navbar = () => {
           left="0"
           right="0"
         >
-          <MobileMenu clicked={clicked} />
+          <MobileMenu />
         </Box>
       )}
       <Flex
@@ -36,7 +36,14 @@ const Navbar = () => {
         px={4}
         py={4}
       >
-        <Image src="/logo.jpg" pt={1.7} />
+        <Flex alignItems="center" gap={4}>
+          <Image
+            src="https://pngimg.com/uploads/infinity_symbol/infinity_symblo_PNG46.png"
+            w="16"
+            pt={1.7}
+          />
+          <Heading fontFamily="Poppins">Infinity </Heading>
+        </Flex>
         <Flex gap={7}>
           <Flex
             gap={8}

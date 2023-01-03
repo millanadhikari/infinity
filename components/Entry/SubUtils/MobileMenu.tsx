@@ -17,14 +17,13 @@ import {
 import { BsFacebook } from "react-icons/bs";
 import Underline from "./Underline";
 
-const MobileMenu = ({ clicked }) => {
+const MobileMenu = () => {
   return (
     <Stack
       px={5}
       py={5}
       maxW={{ md: "1200px" }}
       mx={{ base: 0, md: "auto" }}
-      flexDir={{ md: "flex" }}
     >
       <Box>
         <List fontSize="44" mb={2} fontFamily="Bebas Neue">
@@ -38,7 +37,7 @@ const MobileMenu = ({ clicked }) => {
             Work
           </ListItem>
         </List>
-        <List fontFamily="Poppins" fontWiehgt="semibold">
+        <List fontFamily="Poppins" >
           <ListItem mb={1} cursor="pointer" _hover={{ color: "red.500" }}>
             Careers
           </ListItem>

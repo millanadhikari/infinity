@@ -25,7 +25,7 @@ const Navbar = () => {
     <Box
       position="fixed"
       zIndex="999"
-      bg={(!show && "whiteAlpha.200") || (!clicked && "whiteAlpha.200")}
+      bg={(!show || !clicked && "white")}
       w="100%"
     >
       {!clicked && (
@@ -34,7 +34,7 @@ const Navbar = () => {
           h="100vh"
           overflow="hidden"
           top="0"
-          bg="whiteAlpha.200"
+          bg="white"
           mt="70px"
           __css={{
             "::-webkit-scrollbar": {
@@ -61,9 +61,7 @@ const Navbar = () => {
             w="14"
             pt={1.7}
           />
-          <Heading fontFamily="Poppins" fontSize="26">
-            Infinity{" "}
-          </Heading>
+          <Heading fontFamily="Poppins" fontSize="26">Infinity </Heading>
         </Flex>
         <Flex gap={7}>
           <Flex
@@ -71,7 +69,7 @@ const Navbar = () => {
             alignItems="center"
             fontSize="14"
             display={{ base: "none", md: show ? "none" : "flex" }}
-            color={{ sm: !clicked ? "whiteAlpha.200" : "black" }}
+            color={{ sm: !clicked ? "white" : "black" }}
             fontFamily="Poppins"
           >
             <Text cursor="pointer" _hover={{ color: "red.500" }}>
@@ -94,7 +92,7 @@ const Navbar = () => {
             </Text>
             <Button
               bg="red.500"
-              color="whiteAlpha.200"
+              color="white"
               size="sm"
               rounded="3xl"
               py={6}

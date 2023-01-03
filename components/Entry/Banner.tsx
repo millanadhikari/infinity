@@ -2,10 +2,9 @@ import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import { GoChevronRight } from "react-icons/go";
 
-
 const Banner = () => {
   return (
-    <Box pl={5} py={10} w={{ md: "1200px" }} mx="auto">
+    <Box pl={5} mt="24" py={10} w={{ md: "1200px" }} mx="auto">
       <Heading
         fontSize={{ base: "60", sm: "70", md: "80" }}
         fontFamily="Bebas Neue"
@@ -16,7 +15,7 @@ const Banner = () => {
       <Text
         fontFamily="Poppins"
         my={6}
-        maxW={{ base: "420px", sm: "420px" }}
+        maxW={{ base: "420px", sm: "380px" }}
         fontSize="15"
         letterSpacing="-0.04rem"
         color="gray.700"
@@ -24,9 +23,13 @@ const Banner = () => {
         Having a clear strategy is the difference between successful digital
         products and those 95% that fail in their first year.
       </Text>
-      <Button bg="red.500" color="white" rounded="3xl" px={8}>
-        <Flex gap={3} alignItems="center">
-          <Text>Explore how</Text> <GoChevronRight />
+      <Button bg="red.500" color="white" rounded="3xl" px={8}           _hover={{ bg: "black", color: "white" }}
+>
+        <Flex
+          gap={3}
+          alignItems="center"
+        >
+          <Text mb={1}>Explore how</Text> <GoChevronRight />
         </Flex>
       </Button>
     </Box>

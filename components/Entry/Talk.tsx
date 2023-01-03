@@ -4,7 +4,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 
 const Talk = () => {
   return (
-    <Box mt={20} textAlign={{ sm: "center" }}>
+    <Box mt={36} textAlign={{ sm: "center" }}>
       <Box mx={{ base: 5 }}>
         <Heading fontSize="34">Got a project?</Heading>
         <Button
@@ -22,8 +22,12 @@ const Talk = () => {
           </Flex>
         </Button>
       </Box>
-      <Box mt={12}  w={{ md: "1200px" }} mx="auto" >
-        <Image objectFit='cover' w="200" src="https://wp-assets.infinum.com/uploads/2022/03/img-home-sectionbreak.jpg" />
+      <Box mt={12} w={{ md: "1200px" }} mx="auto">
+        <Image
+          objectPosition="none"
+          objectFit="fill"
+          src="https://wp-assets.infinum.com/uploads/2022/03/img-home-sectionbreak.jpg"
+        />
       </Box>
     </Box>
   );

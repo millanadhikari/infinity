@@ -72,8 +72,8 @@ const Murquee = () => {
   return (
     <Flex
       flexDirection="column"
-      gap={{ base: 8, md: 14 }}
-      my={{ base: 4, md: 6 }}
+      gap={{ base: 10, md: 14 }}
+      my={{ base: 8, md: 6 }}
     >
       <Marquee>
         {data.map((item) => (

@@ -32,7 +32,7 @@ const Footer = () => {
             <Input
               variant="flushed"
               placeholder="Your email *"
-              _placeholder={{ fontSize: "13" }}
+              _placeholder={{ fontSize: "14" }}
               fontSize="13"
             />
             <InputRightElement
@@ -43,7 +43,7 @@ const Footer = () => {
         <Flex fontSize="15" justifyContent="start" w="100%" mt={10} gap={20}>
           <Box>
             <Text mb={4}>INFINITY</Text>
-            <List spacing={1.5} fontSize="12" fontFamily="Poppins">
+            <List spacing={1.5} fontSize="13" fontFamily="Poppins">
               <ListItem cursor="pointer">Work</ListItem>
               <ListItem cursor="pointer">Industries</ListItem>
               <ListItem cursor="pointer">Services</ListItem>
@@ -56,7 +56,7 @@ const Footer = () => {
 
           <Box>
             <Text mb={4}>MORE</Text>
-            <List spacing={1.5} fontSize="12" fontFamily="Poppins">
+            <List spacing={1.5} fontSize="13" fontFamily="Poppins">
               <ListItem cursor="pointer">Facebook</ListItem>
               <ListItem cursor="pointer">Instagram</ListItem>
               <ListItem cursor="pointer">Twitter</ListItem>
@@ -83,7 +83,7 @@ const Footer = () => {
           pt={1.7}
         />
 
-        <Flex fontSize="12" gap={3}>
+        <Flex fontSize="13" gap={3}>
           <Text cursor="pointer">LEGAL</Text>
           <Text>|</Text>
           <Text cursor="pointer">Privacy Policy</Text>

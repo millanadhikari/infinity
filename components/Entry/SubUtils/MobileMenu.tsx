@@ -19,12 +19,7 @@ import Underline from "./Underline";
 
 const MobileMenu = () => {
   return (
-    <Stack
-      px={5}
-      py={5}
-      maxW={{ md: "1200px" }}
-      mx={{ base: 0, md: "auto" }}
-    >
+    <Stack px={5} py={5} maxW={{ md: "1200px" }} mx={{ base: 0, md: "auto" }}>
       <Box>
         <List fontSize="44" mb={2} fontFamily="Bebas Neue">
           <ListItem cursor="pointer" _hover={{ color: "red.500" }}>
@@ -37,7 +32,7 @@ const MobileMenu = () => {
             Work
           </ListItem>
         </List>
-        <List fontFamily="Poppins" >
+        <List fontFamily="Poppins">
           <ListItem mb={1} cursor="pointer" _hover={{ color: "red.500" }}>
             Careers
           </ListItem>
@@ -71,7 +66,7 @@ const MobileMenu = () => {
             <AiOutlineInstagram />
             <AiFillLinkedin />
             <AiOutlineTwitter />
-            <Underline/>
+            {/* <Underline /> */}
           </Flex>
           <Button
             bg="red.500"

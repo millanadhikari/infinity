@@ -25,7 +25,7 @@ const Navbar = () => {
     <Box
       position="fixed"
       zIndex="999"
-      bg={(!show || !clicked ? "whiteAlpha-900": 'none')}
+      bg={show && !clicked ? "white" : "none"}
       w="100%"
     >
       {!clicked && (
@@ -61,9 +61,11 @@ const Navbar = () => {
             w="14"
             pt={1.7}
           />
-          <Heading fontFamily="Poppins" fontSize="26">Infinity </Heading>
+          <Heading fontFamily="Poppins" fontSize="26">
+            Infinity{" "}
+          </Heading>
         </Flex>
-        <Flex gap={7}>
+        <Flex gap={2}>
           <Flex
             gap={8}
             alignItems="center"

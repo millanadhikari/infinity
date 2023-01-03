@@ -48,9 +48,10 @@ const MobileMenu = () => {
         </List>
         <Stack
           position="absolute"
-          maxW={{ md: "1200px" }}
+          maxW={{base:"100%", md: "1200px" }}
           mx={{ base: 0, md: "auto" }}
           bottom="28"
+          left="0"
           w="100%"
           px="5"
         >

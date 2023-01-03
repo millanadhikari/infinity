@@ -15,6 +15,7 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
+import Underline from "./Underline";
 
 const MobileMenu = ({ clicked }) => {
   return (
@@ -71,6 +72,7 @@ const MobileMenu = ({ clicked }) => {
             <AiOutlineInstagram />
             <AiFillLinkedin />
             <AiOutlineTwitter />
+            <Underline/>
           </Flex>
           <Button
             bg="red.500"

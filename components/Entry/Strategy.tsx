@@ -7,6 +7,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import React from "react";
+import HoverSlideText from "../animations/HoverSlideText";
 
 const Strategy = () => {
   return (
@@ -39,6 +40,7 @@ const Strategy = () => {
           <Heading fontFamily="Bebas Neue" fontSize="40">Data</Heading>
         </Box>
       </Flex>
+      <HoverSlideText/>
     </Box>
   );
 };

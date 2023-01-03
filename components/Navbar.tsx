@@ -25,7 +25,7 @@ const Navbar = () => {
     <Box
       position="fixed"
       zIndex="999"
-      bg={(!show || !clicked && "white")}
+      bg={(!show || !clicked ? "whiteAlpha-900": 'none')}
       w="100%"
     >
       {!clicked && (

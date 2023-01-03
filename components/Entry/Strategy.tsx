@@ -10,7 +10,7 @@ import React from "react";
 
 const Strategy = () => {
   return (
-    <Box mx={5} my={10}>
+    <Box w={{ md: "1200px" }} pl={5} mx="auto">
       <Text>WE SHIP WHAT WE PROMISE</Text>
       <Heading
         fontFamily="Poppins"

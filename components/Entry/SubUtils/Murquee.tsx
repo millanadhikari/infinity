@@ -70,20 +70,32 @@ const lama = [
 
 const Murquee = () => {
   return (
-    <Flex flexDirection="column" gap={{base:8, md:14}} my={{base:4, md:6}}>
+    <Flex
+      flexDirection="column"
+      gap={{ base: 8, md: 14 }}
+      my={{ base: 4, md: 6 }}
+    >
       <Marquee>
         {data.map((item) => (
-          <Box id={item.title} textAlign="center" mr={{base:14, sm:20, md:24}}>
+          <Box
+            id={item.id.toString()}
+            textAlign="center"
+            mr={{ base: 14, sm: 20, md: 24 }}
+          >
             {/* <Text fontSize="12"> {item.title}</Text> */}
-            <Image w={"60px"} h={"55px"} src={item.img} />
+            <Image w={"50px"} h={"45px"} src={item.img} />
           </Box>
         ))}
       </Marquee>
       <Marquee direction="right">
         {lama.map((item) => (
-          <Box id={item.title} textAlign="center" mr={{base:14, sm:20, md:24}}>
+          <Box
+            id={item.title}
+            textAlign="center"
+            mr={{ base: 14, sm: 20, md: 24 }}
+          >
             {/* <Text fontSize="12"> {item.title}</Text> */}
-            <Image w={"60px"} h={"55px"} src={item.img} />
+            <Image w={"50px"} h={"45px"} src={item.img} />
           </Box>
         ))}
       </Marquee>

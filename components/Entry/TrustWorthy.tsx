@@ -4,7 +4,7 @@ import Murquee from "./SubUtils/Murquee";
 
 const TrustWorthy = () => {
   return (
-    <Box>
+    <Box w={{ md: "1200px" }} mx="auto">
       <Flex
         flexDirection={{ base: "column", sm: "row" }}
         gap={{ md: 5 }}
@@ -23,7 +23,7 @@ const TrustWorthy = () => {
             Trustworthy
           </Heading>
           <Text
-            fontSize="13"
+            fontSize="12"
             my={{ base: 1, md: 5 }}
             w={{ md: "50%" }}
             fontFamily="Poppins"
